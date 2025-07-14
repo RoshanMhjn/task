@@ -7,11 +7,6 @@ const team = [
     image: "https://aakashlabs.com/_nuxt/img/dipesh.e83f911.jpg",
   },
   {
-    name: "Prayusha Shrestha",
-    position: "HR Officer",
-    image: "https://aakashlabs.com/_nuxt/img/pra.cff5285.jpg",
-  },
-  {
     name: "Manta Lama",
     position: "Digital Marketing Co-ordinator",
     image: "https://aakashlabs.com/_nuxt/img/manta.3632c39.jpg",
