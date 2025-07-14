@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, MessageCircle, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "./ui/card";
@@ -56,7 +56,11 @@ const Header = () => {
 
         {/* Icons */}
         <div className="flex items-center space-x-4">
-          <Button>Explore More</Button>
+          <Link to="/feature">
+            <Button>
+              Chat with Gemini <MessageCircle />
+            </Button>
+          </Link>
           {/* Mobile Menu Trigger */}
           <button
             className="md:hidden"
