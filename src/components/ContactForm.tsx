@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
-import { toast } from "sonner";
 
 const validationSchema = Yup.object({
   name: Yup.string().min(2, "Name too short").required("Name is required"),
@@ -37,12 +36,12 @@ const ContactForm = () => {
 
       if (!response.ok) throw new Error("Failed to send");
 
-      toast("Success");
+      alert("Success");
       actions.resetForm();
     } catch (err) {
       console.log(err);
 
-      toast("Fail");
+      alert("Fail");
     } finally {
       setLoading(false);
     }

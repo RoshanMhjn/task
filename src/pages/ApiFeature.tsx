@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import { genAI } from "../lib/gemini";
-import { toast } from "sonner";
 import { Textarea } from "../components/ui/textarea";
 import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
@@ -25,7 +24,7 @@ const ApiFeature = () => {
       setResponse(text);
     } catch (error) {
       console.log(error);
-      toast("Error");
+      alert("Error");
     } finally {
       setLoading(false);
     }
